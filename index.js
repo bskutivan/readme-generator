@@ -1,15 +1,8 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+const generateReadme = require('./utils/generateMarkdown');
 
-const promptUser = () => {
-    console.log( `
-    ====================
-    Lets Build a Readme!
-    ====================
-    `);
-    return inquirer.prompt([
-        
-    ])
-}
+
 
 // array of questions for user
 const questions = [
