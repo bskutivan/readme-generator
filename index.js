@@ -66,16 +66,17 @@ const questions = [
         }
     },
     {
-        type: 'confirm',
-        name: 'confirmContribution',
-        message: 'Would you like others to contribute to this project?',
-        default: true
-    },
-    {
         type: 'input',
         name: 'contribution',
         message: 'What contributions are you looking for? Are there guidelines others should follow?',
-        when: ({confirmContribution}) => confirmContribution
+        validate: contributionInput => {
+            if (contributionInput) {
+                return true;
+            } else {
+                console.log('Please let users know how to contribute!');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
