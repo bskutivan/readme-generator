@@ -1,4 +1,4 @@
-const inquerer = require('inquirer');
+const inquirer = require('inquirer');
 
 const promptUser = () => {
     console.log( `
@@ -94,12 +94,38 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license will you display?',
-        choice: ['MIT', 'ISC', 'GNUGPLv3'],
+        choices: ['MIT', 'ISC', 'GNUGPLv3'],
         validate: licenseChoice => {
             if (licenseChoice) {
                 return true;
             } else {
                 console.log('Please pick a license!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github username?',
+        validate: githubInput => {
+            if (githubInput){
+                return true;
+            } else {
+                console.log('Please type your github username!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?',
+        validate: emailInput => {
+            if (emailInput){
+                return true;
+            } else {
+                console.log('Please enter an email otherwise nobody can tell you how good this project is!');
                 return false;
             }
         }
@@ -116,7 +142,10 @@ function init() {
 }
 
 // function call to initialize program
-init();
+init()
+.then(userAnswerData => {
+    console.log(userAnswerData);
+});
 
 
 // GIVEN a command-line application that accepts user input
