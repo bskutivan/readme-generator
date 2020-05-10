@@ -34,7 +34,7 @@ function generateMarkdown(data) {
   ${data.usage}
    
   ## License
-  This project is licensed under the ${data.license}.
+  This project is licensed under the ${data.license} license.
   ## Contributing
   ${data.contribution}
   ## Tests
