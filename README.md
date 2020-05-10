@@ -39,5 +39,6 @@
   I have set up no tests for the program as of now.
   The video on how to test this application is included here: 
   [Walk-through Video]
+  (https://drive.google.com/file/d/1Rv-MAH_dMaVpjN0xaVwVcEihr_Eqs0A8/view)
   ## Questions
   If you have any questions about the repository, contact me directly at no. You can find more of my work at https://github.com/bskutivan.
