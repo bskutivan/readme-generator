@@ -39,7 +39,7 @@ function generateMarkdown(data) {
   ${data.contribution}
   ## Tests
   ${data.test}
-  The video on how to test this application is included here: 
+  The video on how to use this application is included here: 
   [Walk-through Video]
   ## Questions
   If you have any questions about the repository, contact me directly at ${data.email}. You can find more of my work at https://github.com/${data.github}.
