@@ -36,7 +36,7 @@
   ## Contributing
   Any suggestions are welcome on how to refine this program further or how to streamline the code! 
   ## Tests
-  I have set up no tests for the program as of now.
+  ![](https://github.com/bskutivan/readme-generator/blob/master/screenshot.png)
   The video on how to test this application is included here: 
   (https://drive.google.com/file/d/1Rv-MAH_dMaVpjN0xaVwVcEihr_Eqs0A8/view)
   ## Questions
